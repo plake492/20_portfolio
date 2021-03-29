@@ -6,8 +6,29 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  height: 100vh;
+  margin: 0;
 }
 a {
-  color: #333;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  height: 50px;
+  margin-top: -50px;
 }
