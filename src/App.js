@@ -1,9 +1,10 @@
 import './App.css'
+import Contact from './views/Contact'
 
 function App () {
   return (
     <div>
-      <div>test</div>
+      <Contact />
     </div>
   )
 }
