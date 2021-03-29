@@ -40,31 +40,35 @@ const ContactForm = () => {
   }
 
   return (
-    <section>
+    <section className='bg-dark text-white p-4'>
       <h1>Contact me</h1>
       <form id='contact-form' onSubmit={handleSubmit}>
-
-        <div>
+        <div className='form-group'>
           <label htmlFor='name'>Name:</label>
           <input
+            className='form-control'
             type='text'
             name='name'
             defaultValue={name}
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className='form-group'>
           <label htmlFor='email'>Email address:</label>
           <input
+            className='form-control'
+
             type='email'
             name='email'
             defaultValue={email}
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className='form-group'>
           <label htmlFor='message'>Message:</label>
           <textarea
+            className='form-control'
+
             name='message'
             rows='5'
             defaultValue={message}
@@ -76,7 +80,7 @@ const ContactForm = () => {
             <p className='error-text'>{errorMessage}</p>
           </div>
         )}
-        <button type='submit'>Submit</button>
+        <button className='btn btn-primary' type='submit'>Submit</button>
       </form>
     </section>
   )
